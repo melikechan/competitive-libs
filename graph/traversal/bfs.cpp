@@ -18,6 +18,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
+constexpr int intinf = INT_MAX - 1e3;
 
 // Breadth-first search (BFS).
 void bfs(int node, vector<int> adj[], vector<bool> &visited)

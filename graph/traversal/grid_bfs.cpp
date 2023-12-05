@@ -1,6 +1,8 @@
 /*
     Author: Melike Vurucu (melikechan)
     I hope I won't get confused.
+
+    About this file: BFS on a grid.
 */
 
 #include <bits/stdc++.h>

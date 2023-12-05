@@ -1,6 +1,9 @@
 /*
     Author: Melike Vurucu (melikechan)
     I hope I won't get confused.
+
+    About this file:
+    - Sample code for flood fill algorithm.
 */
 #include <bits/stdc++.h>
 
@@ -14,13 +17,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
-
-/*
-    Votes (1 from 9)
-    Hüseyin Burak'cığım is the 1st candidate.
-    There are several islands, if any two candidates have the same vote on the same island, island's votes are invalid.
-    I hate flood fill.
-*/
+constexpr int intinf = INT_MAX - 1e3;
 
 template <typename T>
 ostream &operator<<(ostream &os, const vector<T> &v)

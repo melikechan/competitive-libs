@@ -18,7 +18,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
-constexpr ll N = ll(1e7) + 1;
+constexpr int intinf = INT_MAX - 1e3;
 
 // GCD of all numbers in a vector.
 ll gcd_of_all(vector<ll> &integers)

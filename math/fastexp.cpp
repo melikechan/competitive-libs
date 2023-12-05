@@ -2,7 +2,8 @@
     Author: Melike Vurucu (melikechan)
     I hope I won't get confused.
 
-    About this file: Fast exponentiation algorithms.
+    About this file:
+    - Fast exponentiation algorithms. (with and without modulo)
 */
 
 #include <bits/stdc++.h>
@@ -17,6 +18,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
+constexpr int intinf = INT_MAX - 1e3;
 
 // Binary exponentiation
 ll bin_exp(ll a, ll b)
@@ -25,7 +27,9 @@ ll bin_exp(ll a, ll b)
     while (b > 0)
     {
         if (b & 1)
+        {
             res = res * a;
+        }
         a = a * a;
         b >>= 1;
     }
@@ -40,7 +44,9 @@ ll bin_exp_mod(ll a, ll b, ll m)
     while (b > 0)
     {
         if (b & 1)
+        {
             res = res * a % m;
+        }
         a = a * a % m;
         b >>= 1;
     }

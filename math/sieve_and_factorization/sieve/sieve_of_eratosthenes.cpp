@@ -29,7 +29,9 @@ void check_primes(ll n)
     is_prime[0] = is_prime[1] = false;
 
     if (n >= 2)
+    {
         primes.push_back(2);
+    }
 
     for (ll i = 4; i <= n; i += 2)
     {

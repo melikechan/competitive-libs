@@ -18,6 +18,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
+constexpr int intinf = INT_MAX - 1e3;
 
 // Prim's algorithm for finding the minimum spanning tree of a graph. This algorithm works like Dijkstra's algorithm with slight differences.
 ll prim(vector<pair<int, ll>> adj[], int n)
@@ -38,6 +39,7 @@ ll prim(vector<pair<int, ll>> adj[], int n)
             continue;
         }
         visited[u] = true;
+
         cost += w;
         node_count++;
 

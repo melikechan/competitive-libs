@@ -18,7 +18,8 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
-constexpr ll N = ll(1e7) + 1;
+constexpr int intinf = INT_MAX - 1e3;
+constexpr ll maxn = ll(1e7) + 1;
 
 // Binary exponentiation with modulo
 ll bin_exp_mod(ll a, ll b, ll m)
@@ -28,7 +29,9 @@ ll bin_exp_mod(ll a, ll b, ll m)
     while (b > 0)
     {
         if (b & 1)
+        {
             res = res * a % m;
+        }
         a = a * a % m;
         b >>= 1;
     }
@@ -36,7 +39,7 @@ ll bin_exp_mod(ll a, ll b, ll m)
 }
 
 // Sieve of Eratosthenes in O(N log log N) time
-vector<bool> is_prime(N, true);
+vector<bool> is_prime(maxn, true);
 vector<ll> primes;
 
 void check_primes(ll n)
@@ -44,7 +47,9 @@ void check_primes(ll n)
     is_prime[0] = is_prime[1] = false;
 
     if (n >= 2)
+    {
         primes.push_back(2);
+    }
 
     for (ll i = 4; i <= n; i += 2)
     {

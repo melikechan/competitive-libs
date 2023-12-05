@@ -23,6 +23,7 @@ constexpr ll N = ll(1e7) + 1;
 // Binary exponentiation with modulo
 ll bin_exp_mod(ll a, ll b, ll m)
 {
+    a %= m;
     ll res = 1;
     while (b > 0)
     {

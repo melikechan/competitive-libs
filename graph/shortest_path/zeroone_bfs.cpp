@@ -18,6 +18,7 @@ using ld = long double;
 
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation window, for preventing overflow
+constexpr int intinf = INT_MAX - 1e3;
 
 // 0-1 Breadth-first search (BFS) to find shortest path in an undirected graph.
 vector<int> bfs(int node, vector<pair<int, int>> adj[]) // adj[node] = {node, weight}
