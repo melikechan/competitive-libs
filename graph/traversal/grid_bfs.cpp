@@ -29,7 +29,7 @@ ostream &operator<<(ostream &os, const vector<T> &v)
     return os;
 }
 
-// Question: https://cses.fi/problemset/task/1193
+// Problem: https://cses.fi/problemset/task/1193
 void solve()
 {
     int n, m;
