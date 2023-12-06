@@ -40,16 +40,50 @@ typedef tuple<ll, ll, ll, ll, ll> plllll;
     vi -> vector<int>
     vl -> vector<long long>
 */
+/*
+    Nested vectors
+    v -> vector (for every level of nesting, there is a corresponding v)
+    vi -> vector<int>
+    vl -> vector<long long>
+*/
+/*
+    Nested vectors
+    v -> vector (for every level of nesting, there is a corresponding v)
+    vi -> vector<int>
+    vl -> vector<long long>
+*/
+// int -> vector<int>
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 typedef vector<vvi> vvvi;
-typedef vector<vvvi> vvvvi;
-typedef vector<vvvvi> vvvvvi;
+// pair<int, int> -> vector<pair<int, int>>
+typedef vector<pii> vpii;
+typedef vector<vpii> vvpii;
+// tuple<int, int, int> -> vector<tuple<int, int, int>>
+typedef vector<piii> vpiii;
+typedef vector<vpiii> vvpiii;
+// tuple<int, int, int, int> -> vector<tuple<int, int, int, int>>
+typedef vector<piiii> vpiiii;
+typedef vector<vpiiii> vvpiiii;
+// tuple<int, int, int, int, int> -> vector<tuple<int, int, int, int, int>>
+typedef vector<piiiii> vpiiiii;
+typedef vector<vpiiiii> vvpiiiii;
+// long long -> vector<long long>
 typedef vector<ll> vl;
 typedef vector<vl> vvl;
 typedef vector<vvl> vvvl;
-typedef vector<vvvl> vvvvl;
-typedef vector<vvvvl> vvvvvl;
+// pair<long long, long long> -> vector<pair<long long, long long>>
+typedef vector<pll> vpll;
+typedef vector<vpll> vvpll;
+// tuple<long long, long long, long long> -> vector<tuple<long long, long long, long long>>
+typedef vector<plll> vplll;
+typedef vector<vplll> vvplll;
+// tuple<long long, long long, long long, long long> -> vector<tuple<long long, long long, long long, long long>>
+typedef vector<pllll> vpllll;
+typedef vector<vpllll> vvpllll;
+// tuple<long long, long long, long long, long long, long long> -> vector<tuple<long long, long long, long long, long long, long long>>
+typedef vector<plllll> vplllll;
+typedef vector<vplllll> vvplllll;
 
 // Constants
 constexpr ll mod = ll(1e9) + 7;
