@@ -89,9 +89,6 @@ typedef vector<vplllll> vvplllll;
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = 2e18;
 constexpr int intinf = INT_MAX - 1e3;
-constexpr ll mod = ll(1e9) + 7;
-constexpr ll inf = 2e18;
-constexpr int intinf = INT_MAX - 1e3;
 
 inline ll lsb(ll x)
 {
