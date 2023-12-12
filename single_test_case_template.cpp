@@ -85,6 +85,9 @@ typedef vector<vpllll> vvpllll;
 typedef vector<plllll> vplllll;
 typedef vector<vplllll> vvplllll;
 
+// Boolean vector
+typedef vector<bool> vb;
+
 // Constants
 constexpr ll mod = ll(1e9) + 7;
 constexpr ll inf = 2e18;
