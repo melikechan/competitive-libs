@@ -40,18 +40,6 @@ typedef tuple<ll, ll, ll, ll, ll> plllll;
     vi -> vector<int>
     vl -> vector<long long>
 */
-/*
-    Nested vectors
-    v -> vector (for every level of nesting, there is a corresponding v)
-    vi -> vector<int>
-    vl -> vector<long long>
-*/
-/*
-    Nested vectors
-    v -> vector (for every level of nesting, there is a corresponding v)
-    vi -> vector<int>
-    vl -> vector<long long>
-*/
 // int -> vector<int>
 typedef vector<int> vi;
 typedef vector<vi> vvi;
@@ -114,9 +102,8 @@ void solve()
 
 int32_t main(void)
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
 
     solve();
     return 0;
