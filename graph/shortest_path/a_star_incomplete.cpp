@@ -22,6 +22,7 @@ constexpr ll inf = LLONG_MAX - ll(1e6); // think that 1e6 like calculation windo
 constexpr int intinf = INT_MAX - 1e3;
 
 // Dijkstra's algorithm to find shortest path in a weighted graph.
+// Weight is squared in this case.
 // adj[node] = {node, weight}
 void dijkstra(int source, vector<pair<int, ll>> adj[], vector<ll> &dist)
 {
@@ -44,9 +45,9 @@ void dijkstra(int source, vector<pair<int, ll>> adj[], vector<ll> &dist)
         for (auto neighbor : adj[node])
         {
             auto [to, weight] = neighbor;
-            if (dist[node] + weight < dist[to])
+            if (dist[node] + weight * weight < dist[to])
             {
-                dist[to] = dist[node] + weight;
+                dist[to] = dist[node] + weight * weight;
                 pq.push({dist[to], to});
             }
         }
